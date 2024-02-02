@@ -9,7 +9,7 @@ def getHostName():
 
 @app.route("/", methods = ['POST'])
 def runSubProcess():
-    result = subprocess.Popen(["python3","/home/ubuntu/stress_cpu.py"])
+    result = subprocess.Popen(["python3","stress_cpu.py"])
     return socket.gethostname()
 
 if __name__ == "__main__":
